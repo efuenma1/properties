@@ -1,0 +1,47 @@
+#configuration properties for local developer machine
+
+
+##SETUP##: replace exchange application credentials 
+
+api:
+  id: "12345" #for API Manager registration
+  errorResponse : "info" #verbose - info - none
+  
+https:
+  listener:
+    port: "8084"  #8082 for open internet or 8092 for internal cloudhub only
+    #port: "8088"
+my:
+  clientId: "xxxxxxxxx"
+  clientSecret: "xxxxxx"   
+        
+#database:
+  #host: "DevOpsESS2802.cloudapp.net"   
+  #instanceName: ""
+  #port: "1433"
+  #user: "Psyncopate"
+  #password: "Psyncopate_2022"
+  #databaseName: "PRCDSGLOBAL_Dev"
+  
+database:
+  host: "10.206.101.69"   
+  instanceName: ""
+  port: "1433"
+  user: "prcdsdevlogin"
+  password: "pass@123"
+  #databaseName: "PRCDSGLOBAL_Dev"
+  databaseName: "PRCDS_DB"
+
+DBPooling:
+  maxSize: "5"
+  minSize: "0"
+  acqIncrement: "1"
+  cacheSize: "5"
+  maxWait: "0"
+  maxTimeout: "0"
+  maxStatements: "0"
+  
+
+DBReconnection:
+  freq: "30000"
+  
